@@ -11,11 +11,15 @@ def maior (x):
     return x > 2
 def menor (x):
     return x <= 2
+def divisiveis(x):
+    return x % 4 == 0
 
 lista1 = [1,2,3,4,5]
-lista2 = []
+lista5 = [10,20,30,40]
 lista2 = ffilter(maior,lista1)
 lista3 = ffilter(menor,lista1)
+lista4 = ffilter(divisiveis, lista5)
+print(lista4)
 print("Teste da função ffilter")
 print("Lista original:",lista1)
 print("Lista 2 com os elementos maiores do que 2:", lista2)
